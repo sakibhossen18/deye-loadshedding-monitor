@@ -23,3 +23,21 @@ export default function Home(){
  <pre>{msg}</pre>
  </main>
 }
+
+'use client';
+
+import {useState} from 'react';
+
+export default function Home(){
+ const [msg,setMsg]=useState('');
+
+ return (
+  <main style={{padding:30}}>
+   <h1>⚡ Deye Load Shedding Monitor V6</h1>
+   <button onClick={()=>setMsg("Working")}>
+    Connect
+   </button>
+   <pre>{msg}</pre>
+  </main>
+ )
+}
