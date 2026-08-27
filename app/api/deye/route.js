@@ -27,7 +27,20 @@ export async function POST(req) {
       }
     );
 
+const text = await tokenResponse.text();
 
+console.log("DEYE RESPONSE:", text);
+
+let tokenData;
+
+try {
+  tokenData = JSON.parse(text);
+} catch(e) {
+  return Response.json({
+    error: "Deye API invalid response",
+    raw: text
+  });
+}
     const tokenData = await tokenResponse.json();
 
 
