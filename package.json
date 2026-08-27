@@ -1,0 +1,12 @@
+{
+  "name": "deye-loadshedding-monitor",
+  "version": "1.0.0",
+  "main": "Deye_API_Bridge_Starter.js",
+  "scripts": {
+    "start": "node Deye_API_Bridge_Starter.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "axios": "^1.7.9"
+  }
+}
